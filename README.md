@@ -46,7 +46,7 @@ Tips:
 
 Please cite the following paper if it helps your research:
 
-    @inproceedings{shen2017ldlforests,
+    @inproceedings{shen2018DRFs,
       author = {Wei Shen and Yilu Guo and Yan Wang and Kai Zhao and Bo Wang and Alan Yuille},
       booktitle = {Proc. CVPR},
       title = {Deep Regression Forests for Age Estimation},
