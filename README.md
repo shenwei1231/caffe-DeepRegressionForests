@@ -1,4 +1,4 @@
-<img align="center" src="http://wei-shen.weebly.com/uploads/2/3/8/2/23825939/drf_orig.png" width="900">
+<img align="center" src="http://wei-shen.weebly.com/uploads/2/3/8/2/23825939/drf_orig.png" width="500">
 
 #### Deep Regression Forests for Age Estimation
 
@@ -27,14 +27,14 @@ If you have different Caffe version than this repo and would like to try out the
  - src/caffe/util/neural_decision_util_functions.cu
 
 (training) 
- - include/caffe/layers/neural_decision_distr_learning_forest_loss_layer.hpp 
- - src/caffe/layers/neural_decision_distr_learning_forest_loss_layer.cpp
- - src/caffe/layers/neural_decision_distr_learning_forest_loss_layer.cu
+ - include/caffe/layers/neural_decision_reg_forest_loss_layer.hpp 
+ - src/caffe/layers/neural_decision_reg_forest_loss_layer.cpp
+ - src/caffe/layers/neural_decision_reg_forest_loss_layer.cu
 
 (testing) 
- - include/caffe/layers/neural_decision_forest_layer.hpp 
- - src/caffe/layers/neural_decision_forest_layer.cpp
- - src/caffe/layers/neural_decision_forest_layer.cu
+ - include/caffe/layers/neural_decision_reg_forest_layer.hpp 
+ - src/caffe/layers/neural_decision_reg_forest_layer.cpp
+ - src/caffe/layers/neural_decision_reg_forest_layer.cu
 
 Tips: 
 1. Make sure that the names of the NeuralDecisionDLForestWithLoss layer and the NeuralDecisionForest layer in the train_net and test_net prototxts are the same, so that the learned leaf nodes can be loaded in the testing stage.

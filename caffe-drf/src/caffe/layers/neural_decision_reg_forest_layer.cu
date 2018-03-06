@@ -2,9 +2,9 @@
 * @author Wei Shen
  *
  *
- * Regression Forest is open source code; you may redistribute it and/or modify it under the
+ * Deep Regression Forests is open source code; you may redistribute it and/or modify it under the
  * terms of the 3-clause BSD license.  You should have received a copy of the
- * 3-clause BSD license along with Regression Forest .  If not, see
+ * 3-clause BSD license along with Deep Regression Forests.  If not, see
  * http://www.opensource.org/licenses/BSD-3-Clause 
 
  for more information.
