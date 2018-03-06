@@ -10,11 +10,14 @@ To run the demo, do the following steps:
 1. Download the Morph dataset. The Morph dataset is not free availabel, but you can request for it from [here](https://ebill.uncw.edu/C20231_ustores/web/store_main.jsp?STOREID=4).
 2. Download pre-trained VGG model [VGG_ILSVRC_16_layers.caffemodel](http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/VGG_ILSVRC_16_layers.caffemodel).
 3. Create a symbolic link to the Morph dataset with the name 'data/morph'
+
     `ln -s 'the absolute path for the Morph dataset' data/morph`  
 	or change the testdir and traindir in run.py.  
 4. Create the train set list and test set list
+
 	`python split.py`
 5. Start training and testing
+
      `python run.py`
 
 #### Transplant:
@@ -37,7 +40,7 @@ If you have different Caffe version than this repo and would like to try out the
  - src/caffe/layers/neural_decision_reg_forest_layer.cu
 
 Tips: 
-1. Make sure that the names of the NeuralDecisionDLForestWithLoss layer and the NeuralDecisionForest layer in the train_net and test_net prototxts are the same, so that the learned leaf nodes can be loaded in the testing stage.
+1. Make sure that the names of the NeuralDecisionRegForestWithLoss layer and the NeuralDecisionRegForest layer in the train_net and test_net prototxts are the same, so that the learned leaf nodes can be loaded in the testing stage.
 2. In our implementation, we use L2 norm as the loss function rather than the negative log likelihood loss described in the paper, to avoid observing negative loss during training (because probability density can be larger than 1). Since we assume each leaf node is a normal distribution, minimizing L2 norm is equivalent to minimizing negative log likelihood loss.
 3. In GPU code, we only implement the case that the target is one-dimensional data.
 
