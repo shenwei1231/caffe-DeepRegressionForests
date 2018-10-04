@@ -176,6 +176,10 @@ namespace caffe
 	{
 
 	}
+	
+	#ifdef CPU_ONLY
+	  STUB_GPU(NeuralDecisionRegForestLayer);
+	#endif
     INSTANTIATE_CLASS(NeuralDecisionRegForestLayer);
     REGISTER_LAYER_CLASS(NeuralDecisionRegForest);
 }
