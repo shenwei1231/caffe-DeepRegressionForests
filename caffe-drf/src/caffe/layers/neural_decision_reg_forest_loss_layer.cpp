@@ -555,7 +555,7 @@ namespace caffe
   }
 
 #ifdef CPU_ONLY
-  STUB_GPU_BACKWARD(NeuralDecisionRegForestWithLossLayer, Backward);
+  STUB_GPU(NeuralDecisionRegForestWithLossLayer);
 #endif
 
   INSTANTIATE_CLASS(NeuralDecisionRegForestWithLossLayer);
