@@ -168,7 +168,7 @@ namespace caffe
 		routing_split_prob_.ToProto(&blob_proto);
 		WriteProtoToTextFile(blob_proto, "routing_split_cpu.txt");*/
 
-		caffe_scal(output_->count(), (Dtype)1.0 / num_trees_, output_data);
+		caffe_scal(output_->count(), scale_ / num_trees_, output_data);
 	}
 
 	template <typename Dtype>
